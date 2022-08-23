@@ -1,0 +1,179 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Kurale&family=Nanum+Gothic&family=Source+Sans+Pro:wght@700&display=swap');
+
+body{
+    background-color: #ff9f1c;
+}
+
+header{
+    width: 100%;
+    height: 15vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-container .hamburger-lines {
+    display: block;
+    height: 24px;
+    width: 30px;
+    position: absolute;
+    top: 38px;
+    left: 37px;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+.nav-container .hamburger-lines .line {
+    display: block;
+    height: 4px;
+    width: 100%;
+    border-radius: 10px;
+    background: black;
+  }  
+
+input{
+    width: 90%;
+    height: 8vh;
+    position: relative;
+    left: 3.5vw;
+    border-radius: 50px;
+    background-color: #fdedd5;
+    border: none;
+  }
+
+input::placeholder{
+    color: black; 
+    text-align: center;
+    font-size: 4vh;
+    font-style: italic;
+    font-family: 'Kurale', serif;
+}
+
+header img{
+    width: 8vw;
+    height: 3.5vh;
+    position: relative;
+    left: -8vw;
+}
+
+main{
+    width: 100%;
+    height: 103vh;
+}
+
+img{
+    width: 40vw;
+    position: relative;
+    left: 28vw;
+}
+
+main section{
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    position: relative;
+    left: 6.5vw;
+}
+
+.tittle{
+    font-size: 38px;
+    font-family: 'Nanum Gothic', sans-serif;
+    font-weight: 700;  
+    word-spacing: 28vw;
+}
+
+h2{
+    font-size: 20px;
+    font-family: 'Nanum Gothic', sans-serif;
+    font-weight: 700;
+}
+
+h3{
+    width: 76%;
+    font-size: 18px;
+    font-family: 'Nanum Gothic', sans-serif;
+    font-weight: 300;
+}
+
+form{
+    height: 8vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    position: relative;
+    right: 10vw;
+    font-size: 18px;
+    font-family: 'Nanum Gothic', sans-serif;
+}
+
+form input{
+    display: none;
+}
+
+form input + label:before{
+    content: "";
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    border: solid black 1px;
+    display: inline-block;
+}
+
+form input:checked + label:before{
+    background-color: black;
+}
+
+main div{
+    width: 90%;
+    height: 7vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    bottom: -1vh;
+    left: 4.5vw;
+    border: solid 1px;
+    border-radius: 50px;
+    font-family: 'Nanum Gothic', sans-serif;
+}
+
+
+.btnSub{
+    position: relative;
+    left: 4vw;
+    background-color: #ff9f1c;
+    font-size: 8vw;
+    border: none;
+}
+
+.btnAdd{
+    position: relative;
+    right: 4vw;
+    background-color: #ff9f1c;
+    font-size: 7vw;
+    border: none;
+}
+
+.btnCart{
+    width: 90%;
+    height: 7vh;
+    position: relative;
+    bottom: -4vh;
+    left: 4.5vw;
+    font-size: 18px;
+    font-weight: 300;
+    font-family: 'Nanum Gothic', sans-serif;
+    background-color: black;
+    color: white;
+    border-radius: 50px;
+    border: none;
+}
